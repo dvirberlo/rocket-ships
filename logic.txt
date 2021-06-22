@@ -1,0 +1,40 @@
+server.js:
+    wss [ws]
+        ws
+            {
+                id : getId(),
+                status: status.*
+            }
+
+    NEW: data {ships}
+        data[id] (ship)
+            {
+                angle: 0-3,
+                name: validName(msg),
+                position: getRandomPosition():[x,y],
+                shots:[shot]
+                    {
+                        position:newShot():[x,y],
+                        time:0+
+                    },
+            }
+
+    functions:
+        getId(len = idLength)
+        gameInput(msg, id)
+        newShot(id)
+        validName(msg)
+        gameLoop()
+        step(id)
+        manageShots(id)
+        getRandomPosition()
+        getRandomAngle()
+        getRandom(min, max)
+
+game.js:
+
+    functions:
+        sendName(e)
+        sendKey(e)
+        drawShip(ctx, x, y, angle, color, grid)
+        drawShot(ctx, x, y, angle, color, grid)

@@ -1,0 +1,23 @@
+{
+  "name": "a",
+  "version": "0.3.0",
+  "description": "A strategy game",
+  "engines": {
+    "node": "12.x"
+  },
+  "main": "index.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "express": "^4.15.2",
+    "ws": "^3.0.0",
+    "ejs": "^3.0.0"
+  },
+  "keywords": [
+    "node",
+    "heroku",
+    "websocket"
+  ],
+  "license": ""
+}

@@ -1,0 +1,5 @@
+{
+  "name": "Rocket Ships Game",
+  "description": "A strategy game",
+  "keywords": ["node", "websocket", "heroku"],
+}
